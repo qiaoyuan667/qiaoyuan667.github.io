@@ -38,7 +38,7 @@ export default function Home() {
             <h1>Qiaoyuan Zheng</h1>
             <p>I am a Master’s student in Data Science at ETH Zürich and a Research Assistant at the ETH AI Center. My research focuses on <strong>LLM evaluation</strong>, <strong>interpretable capability assessment</strong>, and <strong>privacy in language agents</strong>.</p>
             <p>Previously, I studied Computer Science and Mathematics at Sorbonne University. I also worked on time-series forecasting at ESIEE Paris, supervised by Dr. You Jiang.</p>
-            <p className="profile-links"><a href="mailto:zqiaoyuan@ethz.ch">Email</a><span> / </span><a href="/Qiaoyuan-Zheng-CV.pdf" download>CV</a><span> / </span><a href="https://github.com/qiaoyuan667">GitHub</a><span> / </span><a href="https://www.linkedin.com/in/qiaoyuan-zheng">LinkedIn</a></p>
+            <p className="profile-links"><a href="mailto:zqiaoyuan@ethz.ch">Email</a><span> / </span><a href="/Qiaoyuan-Zheng-CV.pdf" download>CV</a><span> / </span><a href="https://scholar.google.com/citations?user=xZJlHW8AAAAJ&hl=en">Google Scholar</a><span> / </span><a href="https://github.com/qiaoyuan667">GitHub</a><span> / </span><a href="https://www.linkedin.com/in/qiaoyuan-zheng">LinkedIn</a></p>
           </div>
           <img className="portrait" src="/portrait-snow-v2.png" alt="Qiaoyuan Zheng in front of snowy mountains" width="210" height="210" />
         </header>
