@@ -73,8 +73,8 @@ export default function Home() {
 
         <section id="projects">
           <h2>Selected Projects</h2>
-          <div className="entry"><div className="entry-heading"><h3>Aperiodic Tiling Generation</h3><span>2024</span></div><p>Implemented Penrose, Wang, and Hat tiling algorithms in Python; optimized generation with duplicate detection and spatial pruning.</p></div>
-          <div className="entry"><div className="entry-heading"><h3>Q-Learning and SARSA in Grid Worlds</h3><span>2023</span></div><p>Compared Q-learning and SARSA across 15 custom environments. Built a map editor and environments adopted for master’s-level teaching at UPEC.</p></div>
+          <div className="entry"><div className="entry-heading"><h3>Aperiodic Tiling Generation</h3><span>2024</span></div><p className="position">Sorbonne University</p><p>Implemented Penrose, Wang, and Hat tiling algorithms in Python; optimized generation with duplicate detection and spatial pruning.</p></div>
+          <div className="entry"><div className="entry-heading"><h3>Q-Learning and SARSA in Grid Worlds</h3><span>2023</span></div><p className="position">ESIEE Paris · <a href="https://github.com/qiaoyuan667/Q-learning-Sarsa-DQN-in-grid-world">GitHub</a></p><p>Compared Q-learning and SARSA across 15 custom environments. Built a map editor and environments adopted for master’s-level teaching at UPEC.</p></div>
         </section>
 
         <section id="about">
