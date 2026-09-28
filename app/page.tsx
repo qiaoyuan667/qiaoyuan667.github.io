@@ -50,10 +50,10 @@ export default function Home() {
           <img className="portrait" src="/portrait-snow-v2.png" alt="Qiaoyuan Zheng in front of snowy mountains" width="210" height="210" />
         </header>
 
-        <nav className="section-nav" aria-label="Sections"><a href="#research">Research</a><a href="#working-papers">Working Papers</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#about">About</a></nav>
+        <nav className="section-nav" aria-label="Sections"><a href="#research">Publications</a><a href="#working-papers">Working Papers</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#about">About</a></nav>
 
         <section id="research">
-          <h2>Research</h2>
+          <h2>Publications</h2>
           <p>I work on evaluating language models beyond aggregate benchmark scores, including privacy–utility trade-offs, ranking robustness, and interpretable skill profiles.</p>
           <div className="publications">
             {papers.filter(p => !p.working).map(p => <article className="publication" key={p.title}>
