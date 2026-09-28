@@ -9,20 +9,20 @@ const papers = [
   {
     title: 'Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?',
     authors: 'Qiaoyuan Zheng, Yiqu Yang',
-    status: 'NeurIPS TAE Workshop. Under review at ICLR.',
+    status: 'NeurIPS TAE Workshop. Under review.',
     summary: 'We study the robustness of near-tied LLM rankings across five benchmarks using item response theory and differential item functioning, with owner-disjoint evaluation folds and matched-random controls.',
     url: 'https://arxiv.org/abs/2609.00482',
   },
   {
     title: 'What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language',
     authors: 'Peng Cui, Qiaoyuan Zheng (co-first author), Rudolf Debelak, Mrinmaya Sachan',
-    status: 'Under review at ICLR.',
+    status: 'Under review.',
     summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
   },
   {
     title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
     authors: 'Berke Arda, Peng Cui, Qiaoyuan Zheng, Rudolf Debelak, Mubashara Akhtar, Mrinmaya Sachan',
-    status: 'Under review at ICLR.',
+    status: 'Under review.',
     summary: 'Combining LLM-based skill discovery with neural cognitive diagnosis to construct interpretable ability profiles for 3,811 LLMs across 9,523 items from five benchmarks.',
   },
   {
