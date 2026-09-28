@@ -2,21 +2,27 @@ const papers = [
   {
     title: 'POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents',
     authors: 'Qiaoyuan Zheng, Yiqu Yang, Qi Gao, Imanol Schlag',
-    status: 'Preprint, 2026. Under review at NeurIPS 2026 E&D Track.',
+    status: 'Accepted at NeurIPS 2026 E&D Track.',
     summary: 'A diagnostic benchmark with 7,852 samples across 10 domains for evaluating the trade-off between task utility and user-defined privacy constraints in LLM agents.',
     url: 'https://arxiv.org/abs/2605.19127',
   },
   {
     title: 'Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?',
     authors: 'Qiaoyuan Zheng, Yiqu Yang',
-    status: 'Preprint, 2026. Under review at ICLR 2027 and the NeurIPS TAE Workshop.',
+    status: 'Accepted at NeurIPS 2026 TAE Workshop. Under review at ICLR 2027.',
     summary: 'We study the robustness of near-tied LLM rankings across five benchmarks using item response theory and differential item functioning, with owner-disjoint evaluation folds and matched-random controls.',
     url: 'https://arxiv.org/abs/2609.00482',
   },
   {
+    title: 'What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language',
+    authors: 'Peng Cui, Qiaoyuan Zheng (co-first author), Rudolf Debelak, Mrinmaya Sachan',
+    status: '2026. Under review at ICLR 2027.',
+    summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
+  },
+  {
     title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
     authors: 'Berke Arda, Peng Cui, Qiaoyuan Zheng, Rudolf Debelak, Mubashara Akhtar, Mrinmaya Sachan',
-    status: '2026. Under review at NeurIPS 2026 E&D Track.',
+    status: '2026. Under review at ICLR 2027.',
     summary: 'Combining LLM-based skill discovery with neural cognitive diagnosis to construct interpretable ability profiles for 3,811 LLMs across 9,523 items from five benchmarks.',
   },
   {
