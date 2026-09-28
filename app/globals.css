@@ -36,6 +36,10 @@ h3 { font-size: 16px; line-height: 1.5; font-weight: 600; margin: 0; }
 .authors, .venue, .paper-links { font-size: 14px; line-height: 1.55; }
 .authors { margin-top: 3px; }
 .venue { font-style: italic; color: var(--muted); }
+.paper-resource-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.paper-resource-links a { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 4px 10px; border: 1px solid #d5e1eb; border-radius: 4px; background: #f8fafc; }
+.paper-resource-links a:hover { border-color: currentColor; }
+.paper-resource-links svg { flex-shrink: 0; }
 .publication .summary { margin-top: 8px; margin-bottom: 0; }
 .entry { margin-bottom: 20px; }
 .entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; }

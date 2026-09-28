@@ -1,3 +1,20 @@
+type PaperResource = {
+  label: string;
+  href: string;
+  icon: 'globe' | 'paper' | 'code' | 'database';
+};
+
+function ResourceIcon({ kind }: { kind: PaperResource['icon'] }) {
+  return (
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+      {kind === 'globe' && <><circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="4" ry="9" /><path d="M3 12h18" /></>}
+      {kind === 'paper' && <><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M9 12h6M9 16h6" /></>}
+      {kind === 'code' && <><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16" /></>}
+      {kind === 'database' && <><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" /></>}
+    </svg>
+  );
+}
+
 const papers = [
   {
     title: 'POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents',
@@ -5,6 +22,12 @@ const papers = [
     status: 'NeurIPS E&D Track.',
     summary: 'A diagnostic benchmark with 7,852 samples across 10 domains for evaluating the trade-off between task utility and user-defined privacy constraints in LLM agents.',
     url: 'https://arxiv.org/abs/2605.19127',
+    links: [
+      { label: 'Project Page', href: 'https://qiaoyuan-zheng.com/POLAR-Bench/', icon: 'globe' },
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2605.19127', icon: 'paper' },
+      { label: 'GitHub', href: 'https://github.com/qiaoyuan667/POLAR-Bench', icon: 'code' },
+      { label: 'Dataset', href: 'https://huggingface.co/datasets/Qiaoyuan/POLAR-Bench', icon: 'database' },
+    ] satisfies PaperResource[],
   },
   {
     title: 'Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?',
@@ -60,7 +83,7 @@ export default function Home() {
               <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
               <p className="authors">{p.authors.split('Qiaoyuan Zheng').map((part, i) => <span key={i}>{i > 0 && <strong>Qiaoyuan Zheng</strong>}{part}</span>)}</p>
               <p className="venue">{p.status}</p>
-              {p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
+              {p.links ? <p className="paper-links paper-resource-links">{p.links.map(link => <a key={link.label} href={link.href}><ResourceIcon kind={link.icon} /><span>{link.label}</span></a>)}</p> : p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
               <p className="summary">{p.summary}</p>
             </article>)}
           </div>
