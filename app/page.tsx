@@ -9,18 +9,19 @@ const papers = [
   {
     title: 'Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?',
     authors: 'Qiaoyuan Zheng, Yiqu Yang',
-    status: 'NeurIPS TAE Workshop. Under review.',
+    status: 'NeurIPS TAE Workshop.',
     summary: 'We study the robustness of near-tied LLM rankings across five benchmarks using item response theory and differential item functioning, with owner-disjoint evaluation folds and matched-random controls.',
     url: 'https://arxiv.org/abs/2609.00482',
   },
   {
     title: 'What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language',
     authors: 'Peng Cui, Qiaoyuan Zheng (co-first author), Rudolf Debelak, Mrinmaya Sachan',
-    status: 'Under review.',
+    status: 'Preprint. Under review.',
     summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
   },
   {
     title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
+    working: true,
     authors: 'Berke Arda, Peng Cui, Qiaoyuan Zheng, Rudolf Debelak, Mubashara Akhtar, Mrinmaya Sachan',
     status: 'Under review.',
     summary: 'Combining LLM-based skill discovery with neural cognitive diagnosis to construct interpretable ability profiles for 3,811 LLMs across 9,523 items from five benchmarks.',
@@ -49,13 +50,26 @@ export default function Home() {
           <img className="portrait" src="/portrait-snow-v2.png" alt="Qiaoyuan Zheng in front of snowy mountains" width="210" height="210" />
         </header>
 
-        <nav className="section-nav" aria-label="Sections"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#about">About</a></nav>
+        <nav className="section-nav" aria-label="Sections"><a href="#research">Research</a><a href="#working-papers">Working Papers</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#about">About</a></nav>
 
         <section id="research">
           <h2>Research</h2>
           <p>I work on evaluating language models beyond aggregate benchmark scores, including privacy–utility trade-offs, ranking robustness, and interpretable skill profiles.</p>
           <div className="publications">
-            {papers.map(p => <article className="publication" key={p.title}>
+            {papers.filter(p => !p.working).map(p => <article className="publication" key={p.title}>
+              <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
+              <p className="authors">{p.authors.split('Qiaoyuan Zheng').map((part, i) => <span key={i}>{i > 0 && <strong>Qiaoyuan Zheng</strong>}{part}</span>)}</p>
+              <p className="venue">{p.status}</p>
+              {p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
+              <p className="summary">{p.summary}</p>
+            </article>)}
+          </div>
+        </section>
+
+        <section id="working-papers">
+          <h2>Working Papers</h2>
+          <div className="publications">
+            {papers.filter(p => p.working).map(p => <article className="publication" key={p.title}>
               <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
               <p className="authors">{p.authors.split('Qiaoyuan Zheng').map((part, i) => <span key={i}>{i > 0 && <strong>Qiaoyuan Zheng</strong>}{part}</span>)}</p>
               <p className="venue">{p.status}</p>
