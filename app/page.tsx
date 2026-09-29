@@ -19,7 +19,7 @@ const papers = [
   {
     title: 'POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents',
     authors: 'Qiaoyuan Zheng, Yiqu Yang, Qi Gao, Imanol Schlag',
-    status: 'NeurIPS E&D Track.',
+    status: 'NeurIPS 2026 E&D Track.',
     summary: 'A diagnostic benchmark with 7,852 samples across 10 domains for evaluating the trade-off between task utility and user-defined privacy constraints in LLM agents.',
     url: 'https://arxiv.org/abs/2605.19127',
     links: [
@@ -32,7 +32,7 @@ const papers = [
   {
     title: 'Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?',
     authors: 'Qiaoyuan Zheng, Yiqu Yang',
-    status: 'NeurIPS TAE Workshop.',
+    status: 'NeurIPS 2026 TAE Workshop.',
     summary: 'We study the robustness of near-tied LLM rankings across five benchmarks using item response theory and differential item functioning, with owner-disjoint evaluation folds and matched-random controls.',
     url: 'https://arxiv.org/abs/2609.00482',
   },
