@@ -35,6 +35,11 @@ const papers = [
     status: 'NeurIPS 2026 TAE Workshop.',
     summary: 'We study the robustness of near-tied LLM rankings across five benchmarks using item response theory and differential item functioning, with owner-disjoint evaluation folds and matched-random controls.',
     url: 'https://arxiv.org/abs/2609.00482',
+    links: [
+      { label: 'Project Page', href: 'https://qiaoyuan-zheng.com/near-tie-robustness/', icon: 'globe' },
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2609.00482', icon: 'paper' },
+      { label: 'GitHub', href: 'https://github.com/qiaoyuan667/near-tie-robustness', icon: 'code' },
+    ] satisfies PaperResource[],
   },
   {
     title: 'What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language',
