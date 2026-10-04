@@ -43,6 +43,7 @@ const papers = [
   },
   {
     title: 'What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language',
+    url: 'https://arxiv.org/abs/2610.01627',
     authors: 'Peng Cui, Qiaoyuan Zheng (co-first author), Rudolf Debelak, Mrinmaya Sachan',
     status: 'Preprint. Under review.',
     summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
