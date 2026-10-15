@@ -49,6 +49,13 @@ const papers = [
     summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
   },
   {
+    title: 'TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models',
+    working: true,
+    authors: 'Yiqu Yang (co-first author), Qiaoyuan Zheng (co-first author), Yang Tian, Yu Fan, Elliott Ash',
+    status: 'Under review.',
+    summary: 'A benchmark of 720 synthetic counterfactual pairs across three domains evaluating privacy leakage and downstream utility across five output-release settings. We develop workflow-constrained privacy quantization (WCPQ) to reduce secret recovery while preserving action branches and costs across 18 frozen workflow/cost combinations.',
+  },
+  {
     title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
     working: true,
     authors: 'Berke Arda, Peng Cui, Qiaoyuan Zheng, Rudolf Debelak, Mubashara Akhtar, Mrinmaya Sachan',
@@ -131,7 +138,7 @@ export default function Home() {
           <p>I speak Chinese, English, and French. Outside research, I enjoy playing drums and saxophone, cooking, reading, and calligraphy.</p>
           <p>You can reach me at <a href="mailto:zqiaoyuan@ethz.ch">zqiaoyuan@ethz.ch</a>.</p>
         </section>
-        <footer><span>Last updated: September 2026</span><span>Layout inspired by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron’s academic website</a>.</span></footer>
+        <footer><span>Last updated: October 2026</span><span>Layout inspired by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron’s academic website</a>.</span></footer>
       </main>
     </>
   );
