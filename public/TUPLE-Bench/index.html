@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TUPLE-Bench audits privacy and utility in typed decision interfaces: 720 secret pairs, nine decision models, and five release views from the same response.">
+  <meta name="theme-color" content="#173b75">
+  <meta property="og:title" content="TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models">
+  <meta property="og:description" content="A benchmark for privacy and utility in typed decision interfaces. Explore the paired design, nine-model results, and workflow-constrained output defenses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qiaoyuan-zheng.com/TUPLE-Bench/">
+  <meta property="og:image" content="https://qiaoyuan-zheng.com/TUPLE-Bench/assets/benchmark-overview.png">
+  <link rel="canonical" href="https://qiaoyuan-zheng.com/TUPLE-Bench/">
+  <title>TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/results.js"></script>
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar" aria-label="Page contents">
+    <a class="brand" href="#top" aria-label="TUPLE-Bench home"><span class="brand-mark">T</span><span>TUPLE-Bench</span></a>
+    <p class="nav-label">On this page</p>
+    <nav class="section-nav" aria-label="Sections">
+      <a href="#idea">The idea</a><a href="#results">Results</a><a href="#benchmark">Benchmark</a><a href="#wcpq">WCPQ</a><a href="#evaluate">Evaluate</a><a href="#resources">Resources</a>
+    </nav>
+    <a class="sidebar-footer" href="https://qiaoyuan-zheng.com/">Research projects <span aria-hidden="true">↗</span></a>
+  </aside>
+  <main id="main">
+    <header class="hero" id="top">
+      <p class="eyebrow">Privacy & utility in decision interfaces</p>
+      <h1>TUPLE<span>-Bench</span></h1>
+      <p class="hero-question">Evaluating and Mitigating Privacy-Utility Trade-offs<br class="desktop-break"> in Typed Decision Models</p>
+      <div class="authors" aria-label="Authors"><span>Yiqu Yang<sup>1*</sup></span><span><a href="https://qiaoyuan-zheng.com/">Qiaoyuan Zheng</a><sup>1*</sup></span><span>Yang Tian<sup>1</sup></span><span>Yu Fan<sup>2</sup></span><span>Elliott Ash<sup>1</sup></span></div>
+      <p class="affiliations"><span><sup>1</sup> ETH Zurich</span><span><sup>2</sup> The University of Hong Kong</span></p>
+      <p class="author-note">* Equal contribution</p>
+      <div class="resource-links" aria-label="Project resources">
+        <a class="button primary" href="#results">Explore the results <span aria-hidden="true">↓</span></a>
+        <a class="button" href="https://github.com/qiaoyuan667/tuple-bench">Explore the code <span aria-hidden="true">↗</span></a>
+        <a class="button" href="https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench">Get the dataset <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="hero-note">720 secret pairs <span>·</span> 9 decision models <span>·</span> 5 release views</p>
+    </header>
+
+    <section id="idea" class="section first-section" aria-labelledby="idea-title">
+      <p class="eyebrow">The idea</p>
+      <h2 id="idea-title">An authorized answer.<br><em>An unintended disclosure.</em></h2>
+      <p class="lead">A dispatcher may be allowed to know that a parcel was delayed, while its fine-grained cause remains private. The selected label can respect that boundary. The scores returned alongside it may still reveal the cause.</p>
+      <div class="boundary-example" aria-label="Illustrative disclosure boundary">
+        <div><span class="small-label">Authorized category · T</span><strong>Delivery delay</strong></div>
+        <span class="boundary-divider" aria-hidden="true">≠</span>
+        <div><span class="small-label">Protected mechanism · S</span><strong>Missed transfer <span class="or">or</span> sorting backlog?</strong></div>
+      </div>
+      <figure class="paper-figure overview-figure">
+        <a href="assets/benchmark-overview.pdf" aria-label="Open the benchmark overview as a vector PDF"><img src="assets/benchmark-overview.png" width="2800" height="1168" alt="Benchmark pipeline: paired worlds share public context and coarse truth, vary secret mechanisms, and yield five release views evaluated separately for utility cost and secret recovery." fetchpriority="high"></a>
+        <figcaption><span>Benchmark overview</span> Paired worlds keep the public context and authorized category fixed. Release views share one saved response. Privacy and downstream cost are evaluated separately. <a href="assets/benchmark-overview.pdf">Vector PDF ↗</a></figcaption>
+      </figure>
+      <div class="principles">
+        <div><span class="step-letter">A</span><h3>Change the secret</h3><p>Hold the public case and permitted business task fixed; vary only the protected mechanism and its private evidence.</p></div>
+        <div><span class="step-letter">B</span><h3>Vary the release</h3><p>Compare five views of one saved response, from no output to the complete native decision object.</p></div>
+        <div><span class="step-letter">C</span><h3>Measure both sides</h3><p>Test secret recovery beyond the authorized category, alongside the cost of routing, review, and clarification.</p></div>
+      </div>
+    </section>
+
+    <section id="results" class="section" aria-labelledby="results-title">
+      <div class="section-heading"><div><p class="eyebrow">The evidence</p><h2 id="results-title">Scores reveal more<br><em>than the selected answer.</em></h2></div><span class="section-number" aria-hidden="true">01</span></div>
+      <p class="lead">Even when protected mechanisms never appear among the answer candidates, full native outputs support <strong>62.85–75.35%</strong> secret recovery across nine models. Choice alone yields <strong>51.04–57.64%</strong>; the no-output baseline is 50%.</p>
+      <div class="result-explorer">
+        <div class="explorer-heading"><h3>What does each released field reveal?</h3><a class="text-link" href="assets/release-recovery.csv" download>Download values <span aria-hidden="true">↓</span></a></div>
+        <div class="release-controls" role="group" aria-label="Select a release view">
+          <button type="button" data-release="public_only" aria-pressed="false">No output</button>
+          <button type="button" data-release="choice" aria-pressed="false">Choice</button>
+          <button type="button" data-release="choice_confidence" aria-pressed="false">Choice + confidence</button>
+          <button type="button" data-release="full_probabilities" aria-pressed="false">Full probabilities</button>
+          <button type="button" data-release="full_native" aria-pressed="true">Full native</button>
+        </div>
+        <p id="release-description" class="release-description" aria-live="polite">Selected category, complete probability vector, and native confidence.</p>
+        <div id="recovery-chart" class="recovery-chart" aria-label="Secret recovery by model"></div>
+        <div class="chart-footer"><span><i class="legend-whisker" aria-hidden="true"></i> Recovery with 95% interval</span><span><i class="legend-chance" aria-hidden="true"></i> 50% no-output reference</span></div>
+        <p class="chart-note">288 test worlds per model. Decoders are selected on validation data and predict each world independently, given the authorized category and two registered secret hypotheses. Intervals use 2,000 source-family bootstrap resamples with fitted decoders held fixed.</p>
+        <details class="data-details"><summary>View the complete results table</summary><div class="table-scroll"><table id="primary-table"><caption>Conditional secret recovery (%) · primary release audit</caption><thead><tr><th scope="col">Model</th><th scope="col">No output</th><th scope="col">Choice</th><th scope="col">Choice + c</th><th scope="col">Full p</th><th scope="col">Full native</th></tr></thead><tbody></tbody></table></div></details>
+        <noscript><p>The interactive chart needs JavaScript. <a href="assets/release-recovery.csv">Download all recovery values and confidence intervals.</a></p></noscript>
+      </div>
+      <div class="finding-row"><div class="finding-number">11.46–23.61<span>percentage points</span></div><p>Additional recovery from full native outputs relative to choice alone, across the nine evaluated models.</p></div>
+      <div class="refusal-note"><span class="small-label">A complementary refusal probe</span><p>When fine mechanisms are explicitly offered alongside <code>WITHHOLD</code>, correct direct choices and residual scores after withholding recover the secret in <strong>91.88–99.93%</strong> of responses. This diagnostic covers all 1,440 worlds per model and uses score ranking over 16 mechanisms.</p></div>
+      <h3 class="subsection-title">Richer outputs also support better decisions.</h3>
+      <p>Full native outputs lower pooled mean business cost relative to choice in all <strong>27 model–task comparisons</strong> under the authored costs. The privacy–utility trade-off depends on both the model and the workflow.</p>
+      <figure class="paper-figure"><a href="assets/privacy-utility.pdf" aria-label="Open the nine-model privacy–utility comparison as a vector PDF"><img src="assets/privacy-utility.png" width="4000" height="1475" loading="lazy" alt="Three scatter plots compare secret recovery with asymmetric-routing, clarification, and selective-routing cost for nine models; the non-dominated models vary by task."></a><figcaption><span>Full-native privacy–utility comparison</span> The same recovery estimate appears in each panel. Lower recovery and lower cost are preferred; dashed lines connect the descriptive non-dominated points. <a href="assets/privacy-utility.pdf">Vector PDF ↗</a></figcaption></figure>
+    </section>
+
+    <section id="benchmark" class="section" aria-labelledby="benchmark-title">
+      <div class="section-heading"><div><p class="eyebrow">The benchmark</p><h2 id="benchmark-title">Same public case.<br><em>Different private cause.</em></h2></div><span class="section-number" aria-hidden="true">02</span></div>
+      <div class="stats" aria-label="Benchmark at a glance"><div><strong>720</strong><span>counterfactual pairs</span></div><div><strong>1,440</strong><span>synthetic worlds</span></div><div><strong>48</strong><span>protected mechanisms</span></div><div><strong>3</strong><span>operational domains</span></div></div>
+      <p class="lead">Each pair shares public context, recipient permissions, the authorized coarse category, and downstream cost and check rules. Only the protected mechanism and its supporting private evidence change.</p>
+      <div class="domain-list">
+        <article><span class="domain-index">01</span><div><h3>Delivery operations</h3><p>A merchant-claim dispatcher receives a coarse route.</p></div><div class="domain-example"><span class="small-label">Within DELAY</span><p>Missed transfer ↔ sorting backlog</p></div></article>
+        <article><span class="domain-index">02</span><div><h3>Equipment service</h3><p>An external service dispatcher receives a fault category.</p></div><div class="domain-example"><span class="small-label">Within POWER</span><p>Contact oxidation ↔ regulator drift</p></div></article>
+        <article><span class="domain-index">03</span><div><h3>IT operations</h3><p>An external incident dispatcher receives an incident category.</p></div><div class="domain-example"><span class="small-label">Within NETWORK</span><p>Stale resolver entry ↔ stale overlay route</p></div></article>
+      </div>
+      <div class="split-block"><div><h3>Split by source family.</h3><p>Both worlds of each pair stay together. Attacks and consumer policies fit on training data, select on validation data, and score the held-out test split.</p></div><div class="split-visual" aria-label="864 training, 288 validation, and 288 test worlds"><div class="split-bar"><span>60%</span><span>20%</span><span>20%</span></div><div class="split-labels"><span><strong>864</strong> Train</span><span><strong>288</strong> Validation</span><span><strong>288</strong> Test</span></div></div></div>
+      <p class="note">All cases are AI-authored hypothetical events. Structural pair checks and declared-family split separation do not establish semantic independence; the release retains documented review issues.</p>
+    </section>
+
+    <section id="wcpq" class="section" aria-labelledby="wcpq-title">
+      <div class="section-heading"><div><p class="eyebrow">Workflow-constrained privacy quantization</p><h2 id="wcpq-title">Keep the workflow.<br><em>Compress the disclosure.</em></h2></div><span class="section-number" aria-hidden="true">03</span></div>
+      <p class="lead">Strict WCPQ replaces native scores with a standard codeword only when it preserves the complete behavior of the frozen downstream policies—including every possible clarification branch.</p>
+      <div class="workflow-strip" aria-label="Strict WCPQ release process"><div><span>01</span><strong>Native response</strong><small>Choice · scores · confidence</small></div><b aria-hidden="true">→</b><div><span>02</span><strong>Workflow check</strong><small>3 tasks × 6 cost profiles</small></div><b aria-hidden="true">→</b><div><span>03</span><strong>Verified release</strong><small>First feasible code or native fallback</small></div></div>
+      <p>The mapper processes each response independently inside the trusted backend. It uses the native response and public context, without the target’s gold labels, private evidence, secret hypotheses, or paired response.</p>
+      <div class="table-scroll defense-table"><table id="defense-table"><caption>Defense-aware conditional recovery (%) · 288 test worlds per model</caption><thead><tr><th scope="col">Method</th><th scope="col">TypeSafe</th><th scope="col">OpenJev</th><th scope="col">Clef</th></tr></thead><tbody></tbody></table></div>
+      <div class="table-controls"><label><input id="show-defense-ci" type="checkbox"> Show 95% intervals</label><a href="assets/defense-recovery.csv" download>Download values ↓</a></div>
+      <p class="chart-note">All rows use the defense-audit protocol with adapted decoders and frozen consumers. Native recovery differs from the primary audit because decoders are refitted with workflow-signature features. Gaussian results average three fixed realizations per world.</p>
+      <div class="finding-row wcpq-finding"><div class="finding-number">10.07–24.65<span>percentage-point reduction</span></div><p>Strict WCPQ lowers measured recovery relative to native while preserving every action branch and cost under all <strong>18 frozen workflow/cost combinations</strong>.</p></div>
+      <details><summary>Scope of the guarantee and learned extensions</summary><p>The guarantee applies to the declared policies and simulator; it preserves existing errors as well as correct actions. Required workflow behavior and native fallbacks can still reveal secrets. These are development results on previously inspected test cases, with no independent confirmation or formal confidentiality guarantee.</p><p>Learned bounded-cost variants are also included in the evaluation software. Pair loss gives no consistent additional privacy benefit in these experiments, and positive cost budgets can materially increase business cost.</p></details>
+    </section>
+
+    <section id="evaluate" class="section" aria-labelledby="evaluate-title">
+      <div class="section-heading"><div><p class="eyebrow">Reproduce & build on the benchmark</p><h2 id="evaluate-title">Saved responses.<br><em>Reproducible evaluations.</em></h2></div><span class="section-number" aria-hidden="true">04</span></div>
+      <p class="lead">The release includes the frozen benchmark, cached model responses, fitted evaluation artifacts, and Python APIs. Replay the reported evaluations offline, or fit the attacker library again using the frozen splits.</p>
+      <ol class="run-steps"><li><span>1</span><div><h3>Get the two release packages</h3><p>Download the software and dataset ZIPs from the code release. Extract both into the same directory; they share a <code>tuple-bench/</code> root.</p></div></li><li><span>2</span><div><h3>Install the evaluation package</h3><p>In the extracted root, run <code>python -m pip install -e .</code> in your Python environment.</p></div></li><li><span>3</span><div><h3>Verify and evaluate through the API</h3><p>The example below replays cached responses and fitted artifacts. Add <code>refit=True</code> to refit secret decoders on the frozen training split.</p></div></li></ol>
+      <div class="code-block"><div class="code-header"><span>Python · run from the extracted release root</span><button type="button" class="copy-button" data-copy="evaluation-code">Copy</button></div><pre><code id="evaluation-code">from tuplebench import (
+    verify_release,
+    evaluate_primary,
+    evaluate_defenses,
+    evaluate_refusal,
+)
+
+verify_release(".")
+
+primary = evaluate_primary(root=".")
+defenses = evaluate_defenses(root=".")
+refusal = evaluate_refusal(root=".")</code></pre></div>
+      <div class="resource-links left"><a class="button primary" href="https://github.com/qiaoyuan667/tuple-bench/releases/tag/v1.0.1">Get the software <span aria-hidden="true">↗</span></a><a class="button" href="assets/tuple-bench-dataset.zip" download>Dataset ZIP · 6.1 MB <span aria-hidden="true">↓</span></a></div>
+      <p class="note">Default evaluation makes no model API calls. To evaluate a new model, collect its canonical responses through <code>TypedDecisionClient</code>, then use <code>evaluate_response_file</code>. Preserve the frozen dataset and candidate semantics.</p>
+      <p class="note">Browse the <a href="https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench">dataset on Hugging Face</a>, or follow the <a href="https://github.com/qiaoyuan667/tuple-bench/blob/main/docs/reproduce.md">full reproduction guide</a>.</p>
+    </section>
+
+    <section id="resources" class="section resources-section" aria-labelledby="resources-title">
+      <p class="eyebrow">Explore further</p><h2 id="resources-title">The benchmark,<br><em>down to the numbers.</em></h2>
+      <div class="resource-grid"><a href="https://github.com/qiaoyuan667/tuple-bench"><span class="small-label">Implementation</span><strong>Evaluation software <span>↗</span></strong><p>Python APIs, tests, and frozen fitted artifacts.</p></a><a href="assets/tuple-bench-dataset.zip" download><span class="small-label">Frozen release · v1.0.0</span><strong>Benchmark database <span>↓</span></strong><p>Cases, splits, cached responses, and review records.</p></a><a href="assets/results.json" download><span class="small-label">Machine-readable results</span><strong>Page data <span>↓</span></strong><p>Primary, refusal, and defense results with intervals.</p></a><a href="assets/SHA256SUMS.txt"><span class="small-label">Release integrity</span><strong>Dataset checksum <span>↗</span></strong><p>SHA-256 for the exact frozen dataset archive.</p></a></div>
+      <h3 class="subsection-title">Cite this work.</h3>
+      <p class="note">Manuscript citation. The paper link will be added when available.</p>
+      <div class="code-block"><div class="code-header"><a href="assets/tuple-bench.bib" download>Download BibTeX ↓</a><button type="button" class="copy-button" data-copy="citation-code">Copy</button></div><pre><code id="citation-code">@misc{yang2026tuple,
+  title={TUPLE-Bench: Evaluating and Mitigating
+         Privacy-Utility Trade-offs in Typed Decision Models},
+  author={Yang, Yiqu and Zheng, Qiaoyuan and Tian, Yang
+          and Fan, Yu and Ash, Elliott},
+  year={2026},
+  url={https://qiaoyuan-zheng.com/TUPLE-Bench/}
+}</code></pre></div>
+      <details class="scope-note"><summary>What these results establish</summary><p>TUPLE-Bench measures disclosure under explicit recipient permissions on synthetic operational cases. Secret inference is passive and closed-set, choosing between two known mechanisms. Results measure empirical recovery under a finite attacker library. Costs use authored benchmark units and idealized checks.</p><p>Each world has one saved response. Repeated-call variability and server-side stochasticity are not estimated. Bootstrap intervals condition on the fitted models and cached responses. These findings do not establish deployment prevalence, calibrated probabilities, or universal privacy and utility guarantees.</p></details>
+    </section>
+    <footer><a class="footer-brand" href="#top">TUPLE-Bench</a><span>Privacy and utility in typed decision interfaces.</span><a href="#top">Back to top ↑</a></footer>
+  </main>
+  <div id="copy-status" class="sr-only" aria-live="polite"></div>
+</body>
+</html>

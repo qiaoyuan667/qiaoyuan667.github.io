@@ -51,6 +51,12 @@ const papers = [
   {
     title: 'TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models',
     working: true,
+    url: 'https://qiaoyuan-zheng.com/TUPLE-Bench/',
+    links: [
+      { label: 'Project Page', href: 'https://qiaoyuan-zheng.com/TUPLE-Bench/', icon: 'globe' },
+      { label: 'GitHub', href: 'https://github.com/qiaoyuan667/tuple-bench', icon: 'code' },
+      { label: 'Dataset', href: 'https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench', icon: 'database' },
+    ] satisfies PaperResource[],
     authors: 'Yiqu Yang (co-first author), Qiaoyuan Zheng (co-first author), Yang Tian, Yu Fan, Elliott Ash',
     status: 'Under review.',
     summary: 'A benchmark of 720 synthetic counterfactual pairs across three domains evaluating privacy leakage and downstream utility across five output-release settings. We develop workflow-constrained privacy quantization (WCPQ) to reduce secret recovery while preserving action branches and costs across 18 frozen workflow/cost combinations.',
@@ -109,7 +115,7 @@ export default function Home() {
               <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
               <p className="authors">{p.authors.split('Qiaoyuan Zheng').map((part, i) => <span key={i}>{i > 0 && <strong>Qiaoyuan Zheng</strong>}{part}</span>)}</p>
               <p className="venue">{p.status}</p>
-              {p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
+              {p.links ? <p className="paper-links paper-resource-links">{p.links.map(link => <a key={link.label} href={link.href}><ResourceIcon kind={link.icon} /><span>{link.label}</span></a>)}</p> : p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
               <p className="summary">{p.summary}</p>
             </article>)}
           </div>

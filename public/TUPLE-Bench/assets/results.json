@@ -1,0 +1,1046 @@
+{
+  "version": "1.0.0",
+  "models": [
+    {
+      "id": "typesafe",
+      "name": "TypeSafe"
+    },
+    {
+      "id": "openjev",
+      "name": "OpenJev"
+    },
+    {
+      "id": "jevk5",
+      "name": "JevK5"
+    },
+    {
+      "id": "clef",
+      "name": "Clef"
+    },
+    {
+      "id": "clef_flash",
+      "name": "Clef-flash"
+    },
+    {
+      "id": "decider",
+      "name": "Decider"
+    },
+    {
+      "id": "sage",
+      "name": "Sage"
+    },
+    {
+      "id": "d1",
+      "name": "d1"
+    },
+    {
+      "id": "mercury_decide",
+      "name": "Mercury Decide"
+    }
+  ],
+  "primary": [
+    {
+      "model": "typesafe",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5277777777777778,
+        "ci": [
+          0.5069444444444444,
+          0.5486111111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.6076388888888888,
+        "ci": [
+          0.5659722222222222,
+          0.6527777777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.7013888888888888,
+        "ci": [
+          0.6597222222222222,
+          0.7465277777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.6979166666666666,
+        "ci": [
+          0.6597222222222222,
+          0.7395833333333334
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5138888888888888,
+        "ci": [
+          0.4930555555555556,
+          0.5381944444444444
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.5902777777777778,
+        "ci": [
+          0.5555555555555556,
+          0.6284722222222222
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.625,
+        "ci": [
+          0.5833333333333334,
+          0.6666666666666666
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.6284722222222222,
+        "ci": [
+          0.5868055555555556,
+          0.6701388888888888
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "jevk5",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "jevk5",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5763888888888888,
+        "ci": [
+          0.5451388888888888,
+          0.6077256944444439
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "jevk5",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.6631944444444444,
+        "ci": [
+          0.6180555555555556,
+          0.7083333333333334
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "jevk5",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.7291666666666666,
+        "ci": [
+          0.6840277777777778,
+          0.7743923611111106
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "jevk5",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.7291666666666666,
+        "ci": [
+          0.6840277777777778,
+          0.7777777777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5104166666666666,
+        "ci": [
+          0.5,
+          0.5243055555555556
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.6145833333333334,
+        "ci": [
+          0.5659722222222222,
+          0.6597222222222222
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.7777777777777778,
+        "ci": [
+          0.7361111111111112,
+          0.8194444444444444
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.7465277777777778,
+        "ci": [
+          0.7013888888888888,
+          0.7916666666666666
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef_flash",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef_flash",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.53125,
+        "ci": [
+          0.5104166666666666,
+          0.5555555555555556
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef_flash",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.6041666666666666,
+        "ci": [
+          0.5659722222222222,
+          0.6458333333333334
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef_flash",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.6909722222222222,
+        "ci": [
+          0.6493055555555556,
+          0.7361111111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef_flash",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.6666666666666666,
+        "ci": [
+          0.6180555555555556,
+          0.7152777777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "decider",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "decider",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5277777777777778,
+        "ci": [
+          0.5069444444444444,
+          0.5486111111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "decider",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.625,
+        "ci": [
+          0.5798611111111112,
+          0.6701388888888888
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "decider",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.7534722222222222,
+        "ci": [
+          0.7083333333333334,
+          0.7986111111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "decider",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.7534722222222222,
+        "ci": [
+          0.7083333333333334,
+          0.7986111111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "sage",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "sage",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5208333333333334,
+        "ci": [
+          0.5069444444444444,
+          0.5381944444444444
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "sage",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.6111111111111112,
+        "ci": [
+          0.5729166666666666,
+          0.6527777777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "sage",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.6979166666666666,
+        "ci": [
+          0.6527777777777778,
+          0.7430555555555556
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "sage",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.7118055555555556,
+        "ci": [
+          0.6631944444444444,
+          0.7604166666666666
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "d1",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "d1",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5659722222222222,
+        "ci": [
+          0.5381944444444444,
+          0.5972222222222222
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "d1",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.6180555555555556,
+        "ci": [
+          0.5694444444444444,
+          0.6666666666666666
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "d1",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.6805555555555556,
+        "ci": [
+          0.6319444444444444,
+          0.7291666666666666
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "d1",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.6909722222222222,
+        "ci": [
+          0.6422743055555558,
+          0.7361111111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "mercury_decide",
+      "release": "public_only",
+      "recovery": {
+        "mean": 0.5,
+        "ci": [
+          0.5,
+          0.5
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "mercury_decide",
+      "release": "choice",
+      "recovery": {
+        "mean": 0.5381944444444444,
+        "ci": [
+          0.5138888888888888,
+          0.5659722222222222
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "mercury_decide",
+      "release": "choice_confidence",
+      "recovery": {
+        "mean": 0.5625,
+        "ci": [
+          0.520746527777778,
+          0.6076388888888888
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "mercury_decide",
+      "release": "full_probabilities",
+      "recovery": {
+        "mean": 0.7048611111111112,
+        "ci": [
+          0.6597222222222222,
+          0.75
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "mercury_decide",
+      "release": "full_native",
+      "recovery": {
+        "mean": 0.6944444444444444,
+        "ci": [
+          0.6493055555555556,
+          0.7430555555555556
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    }
+  ],
+  "defenses": [
+    {
+      "model": "typesafe",
+      "method": "native",
+      "recovery": {
+        "mean": 0.6875,
+        "ci": [
+          0.6458333333333334,
+          0.7326388888888888
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "method": "quantized_10",
+      "recovery": {
+        "mean": 0.6631944444444444,
+        "ci": [
+          0.6249131944444446,
+          0.7048611111111112
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "method": "temperature_2",
+      "recovery": {
+        "mean": 0.6875,
+        "ci": [
+          0.6458333333333334,
+          0.7292534722222217
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "method": "gaussian_05",
+      "recovery": {
+        "mean": 0.6168981481481483,
+        "ci": [
+          0.5810185185185185,
+          0.6550925925925924
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "typesafe",
+      "method": "strict_expanded",
+      "recovery": {
+        "mean": 0.5868055555555556,
+        "ci": [
+          0.5554687500000002,
+          0.6215277777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "method": "native",
+      "recovery": {
+        "mean": 0.6215277777777778,
+        "ci": [
+          0.5833333333333334,
+          0.6631944444444444
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "method": "quantized_10",
+      "recovery": {
+        "mean": 0.5902777777777778,
+        "ci": [
+          0.5520833333333334,
+          0.6319444444444444
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "method": "temperature_2",
+      "recovery": {
+        "mean": 0.6458333333333334,
+        "ci": [
+          0.6041666666666666,
+          0.6875
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "method": "gaussian_05",
+      "recovery": {
+        "mean": 0.5729166666666666,
+        "ci": [
+          0.5393518518518519,
+          0.6076388888888888
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "openjev",
+      "method": "strict_expanded",
+      "recovery": {
+        "mean": 0.5104166666666666,
+        "ci": [
+          0.4895833333333333,
+          0.5347222222222222
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "method": "native",
+      "recovery": {
+        "mean": 0.7638888888888888,
+        "ci": [
+          0.71875,
+          0.8090277777777778
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "method": "quantized_10",
+      "recovery": {
+        "mean": 0.6736111111111112,
+        "ci": [
+          0.6284722222222222,
+          0.71875
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "method": "temperature_2",
+      "recovery": {
+        "mean": 0.7673611111111112,
+        "ci": [
+          0.7222222222222222,
+          0.8125
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "method": "gaussian_05",
+      "recovery": {
+        "mean": 0.6226851851851851,
+        "ci": [
+          0.5844618055555556,
+          0.6620370370370369
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    },
+    {
+      "model": "clef",
+      "method": "strict_expanded",
+      "recovery": {
+        "mean": 0.5173611111111112,
+        "ci": [
+          0.5034722222222222,
+          0.5347222222222222
+        ],
+        "n_worlds": 288,
+        "n_clusters": 144,
+        "status": "descriptive_fixed_fit_cluster_bootstrap",
+        "small_cluster_warning": false
+      }
+    }
+  ],
+  "refusal": [
+    {
+      "model": "typesafe",
+      "valid": 1440,
+      "withheld": 891,
+      "direct_correct": 548,
+      "withheld_correct": 874,
+      "overall_recovered": 1422,
+      "overall_recovery": 0.9875,
+      "withheld_recovery": 0.9809203142536476
+    },
+    {
+      "model": "openjev",
+      "valid": 1440,
+      "withheld": 0,
+      "direct_correct": 1396,
+      "withheld_correct": 0,
+      "overall_recovered": 1396,
+      "overall_recovery": 0.9694444444444444,
+      "withheld_recovery": null
+    },
+    {
+      "model": "jevk5",
+      "valid": 1440,
+      "withheld": 1333,
+      "direct_correct": 107,
+      "withheld_correct": 1216,
+      "overall_recovered": 1323,
+      "overall_recovery": 0.91875,
+      "withheld_recovery": 0.9122280570142536
+    },
+    {
+      "model": "clef",
+      "valid": 1440,
+      "withheld": 1137,
+      "direct_correct": 303,
+      "withheld_correct": 1126,
+      "overall_recovered": 1429,
+      "overall_recovery": 0.9923611111111111,
+      "withheld_recovery": 0.990325417766051
+    },
+    {
+      "model": "clef_flash",
+      "valid": 1440,
+      "withheld": 465,
+      "direct_correct": 942,
+      "withheld_correct": 407,
+      "overall_recovered": 1349,
+      "overall_recovery": 0.9368055555555556,
+      "withheld_recovery": 0.875268817204301
+    },
+    {
+      "model": "decider",
+      "valid": 1440,
+      "withheld": 1102,
+      "direct_correct": 338,
+      "withheld_correct": 1101,
+      "overall_recovered": 1439,
+      "overall_recovery": 0.9993055555555556,
+      "withheld_recovery": 0.9990925589836661
+    },
+    {
+      "model": "sage",
+      "valid": 1440,
+      "withheld": 1425,
+      "direct_correct": 15,
+      "withheld_correct": 1400,
+      "overall_recovered": 1415,
+      "overall_recovery": 0.9826388888888888,
+      "withheld_recovery": 0.9824561403508771
+    },
+    {
+      "model": "d1",
+      "valid": 1440,
+      "withheld": 878,
+      "direct_correct": 545,
+      "withheld_correct": 807,
+      "overall_recovered": 1352,
+      "overall_recovery": 0.9388888888888889,
+      "withheld_recovery": 0.9191343963553531
+    },
+    {
+      "model": "mercury_decide",
+      "valid": 1440,
+      "withheld": 1410,
+      "direct_correct": 30,
+      "withheld_correct": 1403,
+      "overall_recovered": 1433,
+      "overall_recovery": 0.9951388888888889,
+      "withheld_recovery": 0.9950354609929078
+    }
+  ],
+  "sample": {
+    "test_worlds": 288,
+    "test_pairs": 144,
+    "bootstrap_resamples": 2000
+  },
+  "notes": {
+    "primary": "Validation-selected, fixed-fit decoders. Source-family-clustered bootstrap intervals.",
+    "defenses": "Defense-adapted decoders include workflow-signature features. All baselines use the same defense-audit protocol. Gaussian outcomes average three fixed realizations per world."
+  }
+}
