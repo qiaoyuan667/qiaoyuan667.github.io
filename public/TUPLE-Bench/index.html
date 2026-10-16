@@ -9,7 +9,7 @@
   <meta property="og:description" content="A benchmark for privacy and utility in typed decision interfaces. Explore the paired design, nine-model results, and workflow-constrained output defenses.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://qiaoyuan-zheng.com/TUPLE-Bench/">
-  <meta property="og:image" content="https://qiaoyuan-zheng.com/TUPLE-Bench/assets/benchmark-overview.png">
+  <meta property="og:image" content="https://qiaoyuan-zheng.com/TUPLE-Bench/assets/teaser.png">
   <link rel="canonical" href="https://qiaoyuan-zheng.com/TUPLE-Bench/">
   <title>TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -41,6 +41,10 @@
         <a class="button" href="https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench">Get the dataset <span aria-hidden="true">↗</span></a>
       </div>
       <p class="hero-note">720 secret pairs <span>·</span> 9 decision models <span>·</span> 5 release views</p>
+      <figure class="paper-figure hero-teaser" id="teaser">
+        <a href="assets/teaser.pdf" aria-label="Open the TUPLE-Bench teaser as a vector PDF"><img src="assets/teaser.png" width="3000" height="789" fetchpriority="high" alt="TUPLE-Bench overview: a refusal probe exposes leakage despite WITHHOLD; five release views reveal privacy–utility trade-offs; workflow-constrained privacy quantization mitigates leakage while preserving specified downstream behavior and cost."></a>
+        <figcaption><span>Overview of TUPLE-Bench</span> (1) A refusal probe tests leakage through direct selections and residual scores after withholding. (2) A coarse-to-fine audit evaluates privacy–utility trade-offs across five release views. (3) WCPQ mitigates leakage while preserving specified downstream workflow behavior and cost. <em>Trade-off curves are illustrative; experiments measure utility through downstream cost.</em> <a href="assets/teaser.pdf">Vector PDF ↗</a></figcaption>
+      </figure>
     </header>
 
     <section id="idea" class="section first-section" aria-labelledby="idea-title">
@@ -53,7 +57,7 @@
         <div><span class="small-label">Protected mechanism · S</span><strong>Missed transfer <span class="or">or</span> sorting backlog?</strong></div>
       </div>
       <figure class="paper-figure overview-figure">
-        <a href="assets/benchmark-overview.pdf" aria-label="Open the benchmark overview as a vector PDF"><img src="assets/benchmark-overview.png" width="2800" height="1168" alt="Benchmark pipeline: paired worlds share public context and coarse truth, vary secret mechanisms, and yield five release views evaluated separately for utility cost and secret recovery." fetchpriority="high"></a>
+        <a href="assets/benchmark-overview.pdf" aria-label="Open the benchmark overview as a vector PDF"><img src="assets/benchmark-overview.png" width="2800" height="1168" alt="Benchmark pipeline: paired worlds share public context and coarse truth, vary secret mechanisms, and yield five release views evaluated separately for utility cost and secret recovery." loading="lazy"></a>
         <figcaption><span>Benchmark overview</span> Paired worlds keep the public context and authorized category fixed. Release views share one saved response. Privacy and downstream cost are evaluated separately. <a href="assets/benchmark-overview.pdf">Vector PDF ↗</a></figcaption>
       </figure>
       <div class="principles">
