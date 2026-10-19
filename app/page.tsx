@@ -50,10 +50,10 @@ const papers = [
   },
   {
     title: 'TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models',
-    working: true,
     url: 'https://qiaoyuan-zheng.com/TUPLE-Bench/',
     links: [
       { label: 'Project Page', href: 'https://qiaoyuan-zheng.com/TUPLE-Bench/', icon: 'globe' },
+      { label: 'arXiv', href: 'https://arxiv.org/abs/2610.23668', icon: 'paper' },
       { label: 'GitHub', href: 'https://github.com/qiaoyuan667/tuple-bench', icon: 'code' },
       { label: 'Dataset', href: 'https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench', icon: 'database' },
     ] satisfies PaperResource[],
