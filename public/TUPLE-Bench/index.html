@@ -36,7 +36,8 @@
       <p class="affiliations"><span><sup>1</sup> ETH Zurich</span><span><sup>2</sup> The University of Hong Kong</span></p>
       <p class="author-note">* Equal contribution</p>
       <div class="resource-links" aria-label="Project resources">
-        <a class="button primary" href="#results">Explore the results <span aria-hidden="true">↓</span></a>
+        <a class="button primary" href="https://arxiv.org/abs/2610.23668">Read the paper <span aria-hidden="true">↗</span></a>
+        <a class="button" href="#results">Explore the results <span aria-hidden="true">↓</span></a>
         <a class="button" href="https://github.com/qiaoyuan667/tuple-bench">Explore the code <span aria-hidden="true">↗</span></a>
         <a class="button" href="https://huggingface.co/datasets/Qiaoyuan/TUPLE-Bench">Get the dataset <span aria-hidden="true">↗</span></a>
       </div>
@@ -143,14 +144,17 @@ refusal = evaluate_refusal(root=".")</code></pre></div>
       <p class="eyebrow">Explore further</p><h2 id="resources-title">The benchmark,<br><em>down to the numbers.</em></h2>
       <div class="resource-grid"><a href="https://github.com/qiaoyuan667/tuple-bench"><span class="small-label">Implementation</span><strong>Evaluation software <span>↗</span></strong><p>Python APIs, tests, and frozen fitted artifacts.</p></a><a href="assets/tuple-bench-dataset.zip" download><span class="small-label">Frozen release · v1.0.0</span><strong>Benchmark database <span>↓</span></strong><p>Cases, splits, cached responses, and review records.</p></a><a href="assets/results.json" download><span class="small-label">Machine-readable results</span><strong>Page data <span>↓</span></strong><p>Primary, refusal, and defense results with intervals.</p></a><a href="assets/SHA256SUMS.txt"><span class="small-label">Release integrity</span><strong>Dataset checksum <span>↗</span></strong><p>SHA-256 for the exact frozen dataset archive.</p></a></div>
       <h3 class="subsection-title">Cite this work.</h3>
-      <p class="note">Manuscript citation. The paper link will be added when available.</p>
-      <div class="code-block"><div class="code-header"><a href="assets/tuple-bench.bib" download>Download BibTeX ↓</a><button type="button" class="copy-button" data-copy="citation-code">Copy</button></div><pre><code id="citation-code">@misc{yang2026tuple,
-  title={TUPLE-Bench: Evaluating and Mitigating
-         Privacy-Utility Trade-offs in Typed Decision Models},
-  author={Yang, Yiqu and Zheng, Qiaoyuan and Tian, Yang
-          and Fan, Yu and Ash, Elliott},
-  year={2026},
-  url={https://qiaoyuan-zheng.com/TUPLE-Bench/}
+      <p class="note">Preprint: <a href="https://arxiv.org/abs/2610.23668">arXiv:2610.23668</a>.</p>
+      <div class="code-block"><div class="code-header"><a href="assets/tuple-bench.bib" download>Download BibTeX ↓</a><button type="button" class="copy-button" data-copy="citation-code">Copy</button></div><pre><code id="citation-code">@misc{yang2026tuplebench,
+  title = {{TUPLE-Bench}: Evaluating and Mitigating Privacy-Utility
+           Trade-offs in Typed Decision Models},
+  author = {Yang, Yiqu and Zheng, Qiaoyuan and Tian, Yang
+            and Fan, Yu and Ash, Elliott},
+  year = {2026},
+  eprint = {2610.23668},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CR},
+  url = {https://arxiv.org/abs/2610.23668}
 }</code></pre></div>
       <details class="scope-note"><summary>What these results establish</summary><p>TUPLE-Bench measures disclosure under explicit recipient permissions on synthetic operational cases. Secret inference is passive and closed-set, choosing between two known mechanisms. Results measure empirical recovery under a finite attacker library. Costs use authored benchmark units and idealized checks.</p><p>Each world has one saved response. Repeated-call variability and server-side stochasticity are not estimated. Bootstrap intervals condition on the fitted models and cached responses. These findings do not establish deployment prevalence, calibrated probabilities, or universal privacy and utility guarantees.</p></details>
     </section>
