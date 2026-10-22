@@ -49,6 +49,14 @@ const papers = [
     summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
   },
   {
+    title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
+    working: false,
+    url: 'https://arxiv.org/abs/2610.28767v1',
+    authors: 'Berke Arda, Peng Cui, Qiaoyuan Zheng, Rudolf Debelak, Mubashara Akhtar, Mrinmaya Sachan',
+    status: 'Under review.',
+    summary: 'Combining LLM-based skill discovery with neural cognitive diagnosis to construct interpretable ability profiles for 3,811 LLMs across 9,523 items from five benchmarks.',
+  },
+  {
     title: 'TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models',
     url: 'https://qiaoyuan-zheng.com/TUPLE-Bench/',
     links: [
@@ -60,13 +68,6 @@ const papers = [
     authors: 'Yiqu Yang (co-first author), Qiaoyuan Zheng (co-first author), Yang Tian, Yu Fan, Elliott Ash',
     status: 'Under review.',
     summary: 'A benchmark of 720 synthetic counterfactual pairs across three domains evaluating privacy leakage and downstream utility across five output-release settings. We develop workflow-constrained privacy quantization (WCPQ) to reduce secret recovery while preserving action branches and costs across 18 frozen workflow/cost combinations.',
-  },
-  {
-    title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
-    working: true,
-    authors: 'Berke Arda, Peng Cui, Qiaoyuan Zheng, Rudolf Debelak, Mubashara Akhtar, Mrinmaya Sachan',
-    status: 'Under review.',
-    summary: 'Combining LLM-based skill discovery with neural cognitive diagnosis to construct interpretable ability profiles for 3,811 LLMs across 9,523 items from five benchmarks.',
   },
   {
     title: 'Last Translation Benchmark',
@@ -92,7 +93,7 @@ export default function Home() {
           <img className="portrait" src="/portrait-snow-v2.png" alt="Qiaoyuan Zheng in front of snowy mountains" width="210" height="210" />
         </header>
 
-        <nav className="section-nav" aria-label="Sections"><a href="#research">Publications</a><a href="#working-papers">Working Papers</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#about">About</a></nav>
+        <nav className="section-nav" aria-label="Sections"><a href="#research">Publications</a>{papers.some(p => p.working) && <a href="#working-papers">Working Papers</a>}<a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#about">About</a></nav>
 
         <section id="research">
           <h2>Publications</h2>
@@ -108,7 +109,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="working-papers">
+        {papers.some(p => p.working) && <section id="working-papers">
           <h2>Working Papers</h2>
           <div className="publications">
             {papers.filter(p => p.working).map(p => <article className="publication" key={p.title}>
@@ -120,6 +121,8 @@ export default function Home() {
             </article>)}
           </div>
         </section>
+
+        }
 
         <section id="experience">
           <h2>Research Experience</h2>
