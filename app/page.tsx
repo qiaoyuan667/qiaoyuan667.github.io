@@ -1,3 +1,6 @@
+import CitationButton from './components/CitationButton';
+import citations from './data/citations.json';
+
 type PaperResource = {
   label: string;
   href: string;
@@ -17,6 +20,7 @@ function ResourceIcon({ kind }: { kind: PaperResource['icon'] }) {
 
 const papers = [
   {
+    citation: citations['polar-bench'],
     title: 'POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents',
     authors: 'Qiaoyuan Zheng, Yiqu Yang, Qi Gao, Imanol Schlag',
     status: 'NeurIPS 2026 E&D Track.',
@@ -30,6 +34,7 @@ const papers = [
     ] satisfies PaperResource[],
   },
   {
+    citation: citations['near-tied-rankings'],
     title: 'Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?',
     authors: 'Qiaoyuan Zheng, Yiqu Yang',
     status: 'NeurIPS 2026 TAE Workshop.',
@@ -42,6 +47,7 @@ const papers = [
     ] satisfies PaperResource[],
   },
   {
+    citation: citations['what-makes-harder'],
     title: 'What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language',
     url: 'https://arxiv.org/abs/2610.01627',
     authors: 'Peng Cui, Qiaoyuan Zheng (co-first author), Rudolf Debelak, Mrinmaya Sachan',
@@ -49,6 +55,7 @@ const papers = [
     summary: 'Combining item response theory with LLM-based contrastive hypothesis generation to explain question difficulty, with validation through held-out difficulty prediction and targeted question rewriting across reasoning benchmarks.',
   },
   {
+    citation: citations.skilleval,
     title: 'SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models',
     working: false,
     url: 'https://arxiv.org/abs/2610.28767v1',
@@ -57,6 +64,7 @@ const papers = [
     summary: 'Combining LLM-based skill discovery with neural cognitive diagnosis to construct interpretable ability profiles for 3,811 LLMs across 9,523 items from five benchmarks.',
   },
   {
+    citation: citations['tuple-bench'],
     title: 'TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models',
     url: 'https://qiaoyuan-zheng.com/TUPLE-Bench/',
     links: [
@@ -70,6 +78,7 @@ const papers = [
     summary: 'A benchmark of 720 synthetic counterfactual pairs across three domains evaluating privacy leakage and downstream utility across five output-release settings. We develop workflow-constrained privacy quantization (WCPQ) to reduce secret recovery while preserving action branches and costs across 18 frozen workflow/cost combinations.',
   },
   {
+    citation: citations['last-translation'],
     title: 'Last Translation Benchmark',
     authors: 'Vilém Zouhar, Niyati Bafna, Mukund Choudhary, …, Qiaoyuan Zheng, …',
     status: 'Preprint.',
@@ -103,7 +112,10 @@ export default function Home() {
               <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
               <p className="authors">{p.authors.split('Qiaoyuan Zheng').map((part, i) => <span key={i}>{i > 0 && <strong>Qiaoyuan Zheng</strong>}{part}</span>)}</p>
               <p className="venue">{p.status}</p>
-              {p.links ? <p className="paper-links paper-resource-links">{p.links.map(link => <a key={link.label} href={link.href}><ResourceIcon kind={link.icon} /><span>{link.label}</span></a>)}</p> : p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
+              <div className="paper-links paper-resource-links">
+                {p.links ? p.links.map(link => <a key={link.label} href={link.href}><ResourceIcon kind={link.icon} /><span>{link.label}</span></a>) : p.url && <a href={p.url}><ResourceIcon kind="paper" /><span>arXiv</span></a>}
+                <CitationButton title={p.title} citation={p.citation} />
+              </div>
               <p className="summary">{p.summary}</p>
             </article>)}
           </div>
@@ -116,7 +128,10 @@ export default function Home() {
               <h3>{p.url ? <a href={p.url}>{p.title}</a> : p.title}</h3>
               <p className="authors">{p.authors.split('Qiaoyuan Zheng').map((part, i) => <span key={i}>{i > 0 && <strong>Qiaoyuan Zheng</strong>}{part}</span>)}</p>
               <p className="venue">{p.status}</p>
-              {p.links ? <p className="paper-links paper-resource-links">{p.links.map(link => <a key={link.label} href={link.href}><ResourceIcon kind={link.icon} /><span>{link.label}</span></a>)}</p> : p.url && <p className="paper-links"><a href={p.url}>arXiv</a></p>}
+              <div className="paper-links paper-resource-links">
+                {p.links ? p.links.map(link => <a key={link.label} href={link.href}><ResourceIcon kind={link.icon} /><span>{link.label}</span></a>) : p.url && <a href={p.url}><ResourceIcon kind="paper" /><span>arXiv</span></a>}
+                <CitationButton title={p.title} citation={p.citation} />
+              </div>
               <p className="summary">{p.summary}</p>
             </article>)}
           </div>
@@ -147,7 +162,7 @@ export default function Home() {
           <p>I speak Chinese, English, and French. Outside research, I enjoy playing drums and saxophone, cooking, reading, and calligraphy.</p>
           <p>You can reach me at <a href="mailto:zqiaoyuan@ethz.ch">zqiaoyuan@ethz.ch</a>.</p>
         </section>
-        <footer><span>Last updated: October 2026</span><span>Layout inspired by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron’s academic website</a>.</span></footer>
+        <footer><span>Last updated: November 2026</span><span>Layout inspired by <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron’s academic website</a>.</span></footer>
       </main>
     </>
   );
