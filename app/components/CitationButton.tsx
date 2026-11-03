@@ -66,7 +66,7 @@ export default function CitationButton({ title, citation }: { title: string; cit
   return <>
     <button ref={trigger} type="button" className="citation-button" onClick={show} aria-haspopup="dialog" aria-controls={id} aria-label={`View BibTeX and ${count} verified ${count === 1 ? 'citation' : 'citations'} for ${title}`} title={`${count} verified citing ${count === 1 ? 'paper' : 'papers'} · BibTeX and reference evidence`}>
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M10 5H4v7h5c0 4-2 6-5 7M21 5h-6v7h5c0 4-2 6-5 7" /></svg>
-      <span>Citations</span><span className="citation-count">{count}</span>
+      <span>Cites</span><span className="citation-count">{count}</span>
     </button>
     <dialog ref={dialog} id={id} className="citation-dialog" aria-labelledby={`${id}-title`} onClose={() => { setOpen(false); trigger.current?.focus(); }} onPointerDown={event => { backdropPress.current = event.target === event.currentTarget; }} onClick={event => {
       if (!backdropPress.current || event.target !== event.currentTarget) return;
