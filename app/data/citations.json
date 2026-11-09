@@ -1,6 +1,6 @@
 {
   "polar-bench": {
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "bibtex": "@misc{zheng2026polarbenchdiagnosticbenchmarkprivacyutility,\n      title={POLAR-Bench: A Diagnostic Benchmark for Privacy-Utility Trade-offs in LLM Agents}, \n      author={Qiaoyuan Zheng and Yiqu Yang and Qi Gao and Imanol Schlag},\n      year={2026},\n      eprint={2605.19127},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2605.19127}, \n}",
     "bibtexSource": "https://arxiv.org/bibtex/2605.19127",
     "citingPapers": [
@@ -10,7 +10,7 @@
         "url": "https://aclanthology.org/2026.findings-emnlp.2185/",
         "evidenceUrl": "https://aclanthology.org/2026.findings-emnlp.2185.pdf#page=12",
         "referenceLabel": "References · PDF p. 12",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2610.23668",
@@ -18,7 +18,7 @@
         "url": "https://arxiv.org/abs/2610.23668",
         "evidenceUrl": "https://arxiv.org/html/2610.23668v1#bib.bib18",
         "referenceLabel": "References · Zheng et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2610.21333",
@@ -26,7 +26,7 @@
         "url": "https://arxiv.org/abs/2610.21333",
         "evidenceUrl": "https://arxiv.org/pdf/2610.21333v2#page=13",
         "referenceLabel": "References · PDF p. 13",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2609.34790",
@@ -34,7 +34,7 @@
         "url": "https://arxiv.org/abs/2609.34790",
         "evidenceUrl": "https://arxiv.org/html/2609.34790v1#bib.bib27",
         "referenceLabel": "References · Zheng et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2609.26076",
@@ -42,7 +42,7 @@
         "url": "https://arxiv.org/abs/2609.26076",
         "evidenceUrl": "https://arxiv.org/html/2609.26076v1#bib.bib4",
         "referenceLabel": "References · Zheng et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2608.01719",
@@ -50,7 +50,7 @@
         "url": "https://arxiv.org/abs/2608.01719",
         "evidenceUrl": "https://arxiv.org/html/2608.01719v1#bib.bib23",
         "referenceLabel": "References · Zheng et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2607.02814",
@@ -58,12 +58,12 @@
         "url": "https://arxiv.org/abs/2607.02814",
         "evidenceUrl": "https://arxiv.org/html/2607.02814v2#bib.bib42",
         "referenceLabel": "References · Zheng et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       }
     ]
   },
   "near-tied-rankings": {
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "bibtex": "@misc{zheng2026neartiedllmrankingsrobust,\n      title={Are Near-Tied LLM Rankings Robust to Family-DIF-Guided Benchmark Recomposition?}, \n      author={Qiaoyuan Zheng and Yiqu Yang},\n      year={2026},\n      eprint={2609.00482},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2609.00482}, \n}",
     "bibtexSource": "https://arxiv.org/bibtex/2609.00482",
     "citingPapers": [
@@ -73,12 +73,20 @@
         "url": "https://arxiv.org/abs/2610.16067",
         "evidenceUrl": "https://arxiv.org/html/2610.16067v1#bib.bib38",
         "referenceLabel": "References · Zheng and Yang (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
+      },
+      {
+        "id": "zenodo:23981036",
+        "title": "A Hard-Task Gain Is Not a Change of Shape: When Language-Model Progress Is One Number, Why a Difficulty-Specific Gain Is Defined Only Relative to a Scale, a Difficulty Coordinate, an Overlap in Ability and a System Boundary, and What a Claim of Non-Scalar Progress Has to Carry",
+        "url": "https://zenodo.org/records/23981037",
+        "evidenceUrl": "https://zenodo.org/records/23981037/files/a-hard-task-gain-is-not-a-change-of-shape.pdf#page=15",
+        "referenceLabel": "References · PDF p. 15",
+        "verifiedOn": "2026-11-09"
       }
     ]
   },
   "what-makes-harder": {
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "bibtex": "@misc{cui2026makesharderexplainingquestion,\n      title={What Makes Something Hard(er)? Explaining Question Difficulty in Natural Language}, \n      author={Peng Cui and Qiaoyuan Zheng and Rudolf Debelak and Mrinmaya Sachan},\n      year={2026},\n      eprint={2610.01627},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2610.01627}, \n}",
     "bibtexSource": "https://arxiv.org/bibtex/2610.01627",
     "citingPapers": [
@@ -88,18 +96,18 @@
         "url": "https://arxiv.org/abs/2610.28767",
         "evidenceUrl": "https://arxiv.org/html/2610.28767v1#bib.bib32",
         "referenceLabel": "References · Cui et al. (2026b)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       }
     ]
   },
   "skilleval": {
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "bibtex": "@misc{arda2026skillevallearninginterpretableability,\n      title={SkillEval: Learning Interpretable Ability Profiles of LLMs via Cognitive Diagnosis Models}, \n      author={Berke Arda and Peng Cui and Qiaoyuan Zheng and Rudolf Debelak and Mubashara Akhtar and Mrinmaya Sachan},\n      year={2026},\n      eprint={2610.28767},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2610.28767}, \n}",
     "bibtexSource": "https://arxiv.org/bibtex/2610.28767",
     "citingPapers": []
   },
   "tuple-bench": {
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "bibtex": "@misc{yang2026tuplebenchevaluatingmitigatingprivacyutility,\n      title={TUPLE-Bench: Evaluating and Mitigating Privacy-Utility Trade-offs in Typed Decision Models}, \n      author={Yiqu Yang and Qiaoyuan Zheng and Yang Tian and Yu Fan and Elliott Ash},\n      year={2026},\n      eprint={2610.23668},\n      archivePrefix={arXiv},\n      primaryClass={cs.CR},\n      url={https://arxiv.org/abs/2610.23668}, \n}",
     "bibtexSource": "https://arxiv.org/bibtex/2610.23668",
     "citingPapers": [
@@ -109,12 +117,12 @@
         "url": "https://arxiv.org/abs/2610.35826",
         "evidenceUrl": "https://arxiv.org/html/2610.35826v1#bib.bib58",
         "referenceLabel": "References · Yang et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       }
     ]
   },
   "last-translation": {
-    "checkedOn": "2026-11-05",
+    "checkedOn": "2026-11-09",
     "bibtex": "@misc{zouhar2026translationbenchmark,\n      title={Last Translation Benchmark}, \n      author={Vilém Zouhar and Niyati Bafna and Mukund Choudhary and Maike Züfle and Sara Rajaee and Pinzhen Chen and Jannis Vamvas and Sara Papi and Ona de Gibert and Bhavitvya Malik and Eliya Habba and Orfeas Menis Mastromichalakis and Patrícia Schmidtová and Michelle Wastl and Sheriff Issaka and Leshem Choshen and Stella Biderman and Antonis Anastasopoulos and Jan Niehues and Rico Sennrich and Mrinmaya Sachan and Ondřej Bojar and Kenton Murray and Jörg Tiedemann and Alham Fikri Aji and Philipp Koehn and Christof Monz and Alexandra Birch and Sowmya Vajjala and Chalamalasetti Kranti and Cristina España-Bonet and Nobin Sarwar and David Kaczér and Sourajit Saha and Jonathan Tonglet and Shunta Asano and Malik Marmonier and Daban Q. Jaff and Vaisakhi Mishra and Hend Al-Khalifa and Gabriele Sarti and Nils Rehlinger and Juan Daniel Cuervo Villa and Dominik Macháček and Saugata Purkayastha and Jagannathan Ramanujam and Shubhashis Roy Dipta and Aviral Nigam and Shuaib Shuaib Yusuf and Heejin Do and Jonathan Yahav and Johannes-Rudolf David and Maria Carmen Staiano and Zuzana Nadova and Fred Philippy and Ron Keinan and Maria Lymperaiou and Silvia Casola and Fabian Retkowski and Andrés Jerez and Hanna Yukhy- menko and Sangwon Ryu and Avantica Vempati and Sukannya Purkayastha and Adrian Cosma and Erivan Inan and Vitalii Babenko and Wafa Aissa and Valentin Scourneau and Fatima Haouari and Venkata Prasanth Kumar Gummadi and Mehdi Jafarzadeh and Manon Reusens and Kaiser Sun and Lukas Edman and Shaomu Tan and Giuseppe Gallipoli and Pawan Sasanka Ammanamanchi and Manar Ali and Mohammad Sadegh Gholizadeh and Dipankar Srirag and Marek Šuppa and Javier García Gilabert and Ruta Binkyte and Ana-Maria Bucur and Sabry E. Farrag and Youssef Saber and Yihong Liu and Theresia Veronika Rampisela and Christian Hoang and Nicoleta Cojocaru and Jan Kocoń and Jean Maillard and Xiaochuang Yuan and Sina Ahmadi and Daryna Dementieva and Philipp Mondorf and Kaustubh Dhole and Valmik Nahata and Roman Wixinger and Amir Hossein Yari and Shenbin Qian and Manuel Tuor and Fida Mohammad Thoker and Sergey Troshin and Lance Calvin Lim Gamboa and Amir Arsalan Rezapour and Kätriin Kukk and Koel Dutta Chowdhury and Shaswati Saha and Seth Aycock and Bo Chen and Linh Vu and Vatsal Venkatkrishna and Shayan Bali and Arafat Ahsan and Luan Thanh Nguyen and Hassan Soliman and Ngoc Quynh Tram Do and Azmine Toushik Wasi and R. Damanhuri and Marius Huber and Kazuki Egashira and Jimson Paulo Layacan and David Africa and Vladislav Poritski and Mike Zhang and Deep Shah and Abdulaziz Nura Kani and Luis Frentzen Salim and Paul Gavrikov and Bello Umar Bello and Ayush Sunil Munot and Anumit Garg and Yolanda Xavier and Qiaoyuan Zheng and Kawsar Ahmed and Debanshu Das and Zimu Wang and Gengyu Rao and Kamile Dementaviciute and Farhan Farsi and L D M S Sai Teja and Dawei Zhu and Yi Fan and Wei Liu and Marco Gaido and Elias Herranen and Sankalan Pal Chowdhury and Karen Sanchez and Guy Kaplan and Farzad Shami and Ashok Urlana and Amir Hossein Kargaran and Sofie Goethals and Priyaranjan Pattnayak and Oksana Volchek and Marii Ojastu and Hongbin Na and Emilian Radoi and Chenyi Zhao and Carlos Hinojosa and Andrei Niculae and Andrea Gregor de Varda and Zaid Alyafeai and Tomasz Limisiewicz and Reem Alzahrani and Pouya Sadeghi and Nehal Kathrotia and Mateusz Lango and Enzo Doyen and Alex Flückiger and Ulysses Sekai Tully Carr and Samuel Simko and Ritwik Tiwari and Rishit Dagli and Isaac R Caswell and Bowen Yi and Aicha Chorana and Selja Keränen and Sadiksha Chitrakar and Muhammad Ravi Shulthan Habibi and Joy Olusanya and Bishal Shrestha and Zhengxiang Wang and Vivek Harsha Lakkamaneni and Sophia Conrad and Panayiotis Panayiotou and Nazia Tasnim and Marta Punsola Munárriz and Marko Culjak and Luis Lara and Jenny Chim and Jannatul Nayem and Fidel Rodríguez Velásquez and Eran Yahav and Blanka Kövér and Beatrice Savoldi and Anmol Goel and Aishik Mandal and Tosin Adewumi and Raoyuan Zhao and Mykola Haltiuk and Antonia Karamolegkou and Yuxing Lu and Thura Aung and Naser Almousa and Tommaso Cerruti and Raia Abu Ahmad and Beni Egressy and Alireza Pakniat and Stéphane J. P. S. Thunus and Rachel Bawden and Lena Libon and Samridhya Biswas and Prakhar Gupta and Nusrat Jahan Lia and Nguyen Tai and Natchapon Jongwiriyanurak and Minh Ngoc Do and Ivan Barać and Dzmitry Kuzmin and Badal Nyalang and Antoine Taroni and Andy Catruna and Rushikesh Zawar and Roland Aydin and Pavel Stepachev and Ilai Yaron Levy and Andreas Simons and Rayyan Merchant and Ziyi Yang and Samuel Frontull and Kenneth Enevoldsen and Harris Abdul Majid and Tim Graf and Tatiana Bielakova and Sharifa Djurabaeva and Shaoxiong Ji and Jirui Qi and Ayla Rigouts Terryn and Yurii Paniv and Xiyan Fu and Sunisth Kumar and Shree Harsha Bokkahalli Satish and Papa Abdou Karim Karou Diallo and Mengyu Ye and Maximilian Vieweg and Matija Akrap and Kristýna Onderková and Joseph Attieh and Ivan Yuri De Leon and Ibrahim Baroud and Esrael Teferi Tensay and Elisabeth Fittschen and David Dukić and Benoît Sagot and Jingwei Ni and Yu Fan and Juri Opitz},\n      year={2026},\n      eprint={2609.04173},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2609.04173}, \n}",
     "bibtexSource": "https://arxiv.org/bibtex/2609.04173",
     "citingPapers": [
@@ -124,7 +132,7 @@
         "url": "https://aclanthology.org/2026.wmt-main.48/",
         "evidenceUrl": "https://aclanthology.org/2026.wmt-main.48.pdf#page=37",
         "referenceLabel": "References · PDF p. 37 (p. 909)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2610.22542",
@@ -132,7 +140,7 @@
         "url": "https://arxiv.org/abs/2610.22542",
         "evidenceUrl": "https://arxiv.org/html/2610.22542v1#bib.bib54",
         "referenceLabel": "References · Zouhar et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2610.15542",
@@ -140,7 +148,7 @@
         "url": "https://arxiv.org/abs/2610.15542",
         "evidenceUrl": "https://arxiv.org/html/2610.15542v1#bib.bib225",
         "referenceLabel": "References · Zouhar et al. (2026a)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2610.03574",
@@ -148,7 +156,7 @@
         "url": "https://arxiv.org/abs/2610.03574",
         "evidenceUrl": "https://arxiv.org/html/2610.03574v1#bib.bib26",
         "referenceLabel": "References · Zouhar et al. (2026)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       },
       {
         "id": "arxiv:2609.06048",
@@ -156,7 +164,7 @@
         "url": "https://arxiv.org/abs/2609.06048",
         "evidenceUrl": "https://arxiv.org/html/2609.06048v1#bib.bib4",
         "referenceLabel": "References · Zouhar et al. (2026a)",
-        "verifiedOn": "2026-11-05"
+        "verifiedOn": "2026-11-09"
       }
     ]
   }
